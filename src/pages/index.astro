@@ -1,0 +1,41 @@
+---
+import json from '../data/pages.json'
+import MainLayout from '../Layouts/MainLayout.astro'
+const pages = [...json.pages]
+const links = [
+  ...pages.map((page) => {
+    return { image: page.image, title: page.title, href: page.slug }
+  }),
+]
+// console.log(links)
+const { home } = Astro.props
+---
+
+<MainLayout>
+  <h1>Gallery</h1>
+  <div class="">
+    <ul class="">
+      <fragment class="grid grid-flow-col h-fit gap-6">
+        {
+          links.map((link) => (
+            <li>
+              <a href={`/articles/${link.href}`}>
+                <div
+                  id="image"
+                  class="w-auto h-64 overflow-hidden rounded-xl shadow-lg
+                ">
+                  <img
+                    class="h-full w-full object-cover bottom-0"
+                    src={link.image}
+                    alt=""
+                  />
+                </div>
+              </a>
+            </li>
+          ))
+        }
+      </fragment>
+    </ul>
+  </div>
+  <p></p>
+</MainLayout>

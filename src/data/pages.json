@@ -1,0 +1,23 @@
+{
+  "pages": [
+    {
+      "slug": "monalisa",
+      "title": "Monalisa",
+      "text": "Of Leonardo da Vinci's works, the Mona Lisa is the only portrait whose authenticity has never been seriously questioned, and one of four works – the others being Saint Jerome in the Wilderness, Adoration of the Magi and The Last Supper – whose attribution has avoided controversy.",
+      "image": "https://1.bp.blogspot.com/-VVSlaRqBfFY/XnimN6ksdRI/AAAAAAAAF_Q/GSB3boip000o6OiX5mNgNQZBqEdWVkAygCLcBGAsYHQ/s1600/16-54-37-Da_Vinci%2527s_Mona_Lisa_with_original_colors_approximation.jpg"
+    },
+
+    {
+      "slug": "picasso",
+      "title": "Pablo Picasso",
+      "text": "Pablo Ruiz Picasso (25 October 1881 – 8 April 1973) was a Spanish painter, sculptor, printmaker, ceramicist and theatre designer who spent most of his adult life in France. One of the most influential artists of the 20th century, he is known for co-founding the Cubist movement, the invention of constructed sculpture, the co-invention of collage, and for the wide variety of styles that he helped develop and explore.",
+      "image": "https://4.bp.blogspot.com/-js8M_JbdhOQ/WC8X2Wgj9SI/AAAAAAAAH1k/qsXq5l7uTPUlzlYryvcSbF-PTHjGPKsQgCLcB/s1600/Pablo%2BPicasso%2BLe%2Bmatador.jpg"
+    },
+    {
+      "slug": "cezanne",
+      "title": "Paul Cezanne",
+      "text": "French Post-Impressionist Paul Cézanne was one of the most influential artists in the history of modern painting. His works and ideas influenced the aesthetic development of 20th-century artists and art movements like Cubism and Fauv ism. Cézanne was born on January 19, 1839, in Aix-en-Provence, France to a well-off bourgeois family.",
+      "image": "https://th.bing.com/th/id/R.b5ea7289e3e51ae9559f8d0b599762f0?rik=bxG4tjuyeGs4cg&riu=http%3a%2f%2f4.bp.blogspot.com%2f-AfREmQiYhMo%2fUs_KH6q_m-I%2fAAAAAAAAszE%2fZnGSkRm8KPY%2fs1600%2f10%2b1879-80c%2bSelf-Portrait%2boil%2bon%2bcanvas%2bOskar%2bReinhart%2bCollection%2c%2bWinterthur%2c%2bSwitzerland.jpg&ehk=7JALH7gmdxNWRQUuku2u1XKfhMBQoxBlMhXLSPsHD9I%3d&risl=&pid=ImgRaw&r=0"
+    }
+  ]
+}

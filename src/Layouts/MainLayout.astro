@@ -1,0 +1,39 @@
+---
+import Head from '../components/Head.astro'
+import Links from '../components/Links.astro'
+const { title, home } = Astro.props
+---
+
+<html lang="en">
+  <Head title={title} />
+  <body>
+    <Links home={home} />
+    <section>
+      <slot />
+    </section>
+
+    <script src="./../../src/js/app.js" type="module"></script>
+    <style is:global>
+      body {
+        @apply bg-emerald-950;
+      }
+      section {
+        @apply absolute inset-1 flex flex-col max-w-lg mx-auto justify-center items-center gap-8;
+      }
+      h1 {
+        @apply text-5xl text-white font-semibold tracking-tight;
+      }
+      p {
+        @apply text-white/40 text-center;
+      }
+      .transition-morph {
+        transition: 0.8s;
+        @apply opacity-100 ease-in-out;
+      }
+
+      html.is-animating .transition-morph {
+        @apply opacity-0;
+      }
+    </style>
+  </body>
+</html>

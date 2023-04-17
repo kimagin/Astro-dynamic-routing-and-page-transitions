@@ -1,0 +1,46 @@
+---
+import MainLayout from '../../Layouts/MainLayout.astro'
+import Head from '../../components/Head.astro'
+import Links from '../../components/Links.astro'
+import json from '../../data/pages.json'
+
+export async function getStaticPaths() {
+  const pages = [...json.pages]
+
+  return pages.map(({ slug, title, text, image }) => {
+    return {
+      params: { slug },
+      props: { title, text, image },
+    }
+  })
+}
+
+const { title, text, pages, home, image } = Astro.props
+---
+
+<MainLayout home={true}>
+  <div class="text-center flex flex-col justify-center h-screen items-center">
+    <div
+      class="absolute left-0 top-20 right-0 w-auto h-fit overflow-hidden"
+      id="image">
+      <div
+        class="w-60 h-auto object-cover overflow-hidden rounded-full mx-auto my-4 shadow-xl shadow-black/20">
+        <img
+          class="h-full w-full object-cover"
+          src={image}
+          alt=""
+        />
+      </div>
+
+      <h1 class="mb-8">
+        {title}
+      </h1>
+
+      <p>
+        {text}
+      </p>
+    </div>
+
+    <style></style>
+  </div>
+</MainLayout>

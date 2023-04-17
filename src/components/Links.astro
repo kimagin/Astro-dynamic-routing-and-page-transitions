@@ -1,0 +1,41 @@
+---
+import json from '../data/pages.json'
+const pages = [...json.pages]
+const links = [
+  ...pages.map((page) => {
+    return { title: page.title, href: page.slug }
+  }),
+]
+const { home = false } = Astro.props
+---
+
+<nav>
+  <a
+    class="home"
+    href={home ? '/' : ''}
+    >{home ? '🏠' : ''}</a
+  >
+  <!-- <ul>
+    <fragment class="links">
+      {
+        links.map((link) => (
+          <li>
+            <a href={`/articles/${link.href}`}> {link.title}</a>
+          </li>
+        ))
+      }
+    </fragment>
+  </ul> -->
+</nav>
+
+<style>
+  nav {
+    @apply absolute top-0 left-0 right-0 flex justify-center p-6 z-10;
+  }
+  .links {
+    @apply flex gap-4 font-semibold text-base text-fuchsia-50;
+  }
+  .home {
+    @apply text-base text-fuchsia-700 uppercase font-semibold fixed left-10;
+  }
+</style>
